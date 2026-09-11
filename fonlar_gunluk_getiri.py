@@ -4,7 +4,7 @@ from pytefas import Crawler
 
 FON_KODLARI = [
     "ILH", "YPT", "IOO", "VK6", "TI1", "HLL", "CFO", "YLB",
-    "HPV", "HKV", "YVD", "ZP8", "DCB", "GTL", "GJH", "TZL",
+    "HPV", "HKV", "YVD", "ZP8", "DCB", "GTL", "GJH", "TZL","YP4", "YJY", "BKY",
 ]
 
 tefas = Crawler()
