@@ -2,7 +2,7 @@ name: Update TEFAS data
 
 on:
   schedule:
-    - cron: '30 18 * * 1-5'   # her hafta içi günü UTC 18:30 = TR saati 21:30
+    - cron: '0 6 * * 1-5' (Bu, hafta içi her gün UTC 06:00 = Türkiye saati 09:00 demek.)
   workflow_dispatch:          # elle "Run workflow" ile tetiklemeyi de sağlar
 
 permissions:
