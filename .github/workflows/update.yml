@@ -3,7 +3,7 @@ name: Update TEFAS data
 on:
   schedule:
     - cron: '0 6 * * 1-5'
-  workflow_dispatch:          # elle "Run workflow" ile tetiklemeyi de sağlar
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -30,6 +30,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add fonlar_gunluk_getiri.csv
-          git diff --staged --quiet || git commit -m "Günlük veri güncellendi" git pull --rebase origin main git push
+          git add fonlar_gunluk_getiri.csv fonlar_1aylik_gecmis.csv
+          git diff --staged --quiet || git commit -m "Günlük veri güncellendi"
+          git pull --rebase origin main
           git push
