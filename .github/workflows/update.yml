@@ -2,7 +2,7 @@ name: Update TEFAS data
 
 on:
   schedule:
-    - cron: '0 6 * * 1-5'
+    - cron: '15 6 * * 1-5'
   workflow_dispatch:
 
 permissions:
